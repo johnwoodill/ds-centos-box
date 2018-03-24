@@ -42,7 +42,7 @@ sleep 5
 curl "https://raw.githubusercontent.com/andreafabrizi/Dropbox-Uploader/master/dropbox_uploader.sh" -o dropbox_uploader.sh
 chmod +x dropbox_uploader.sh
 echo -e "K8Sh-q51ZRwAAAAAAAAVGrTPnEjSnj_VGvAYxfotUvfnfQba2pU7phDzhXJNvzMH\ny\n" | ./dropbox_uploader.sh
-echo -e "K8Sh-q51ZRwAAAAAAAAVGrTPnEjSnj_VGvAYxfotUvfnfQba2pU7phDzhXJNvzMH\ny\n" | ./dropbox_uploader.sh
+
 
 echo "$(tput setaf 2)-= INSTALLATION COMPLETE. PRESS ENTER TO RESTART SERVER =-$(tput sgr0)"
 read 
