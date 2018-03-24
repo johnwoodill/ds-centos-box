@@ -13,12 +13,12 @@ Installation
 ------------
 
 ``` bash
-curl https://raw.githubusercontent.com/johnwoodill/ds-centos-box/master/ami-installer.sh > ami-installer.sh
+curl https://raw.githubusercontent.com/johnwoodill/ds-centos-box/master/ds_centso7_installer.sh > ds_centso7_installer.sh
 curl https://raw.githubusercontent.com/johnwoodill/ds-centos-box/master/r-packages.R > r-packages.R
 
 sudo usermod -aG wheel johnwoodill
-chmod +x ami-installer.sh
-sudo ./ami-installer.sh
+chmod +x ds_centso7_installer.sh
+sudo ./ds_centso7_installer.sh
 ```
 
 Instructions
