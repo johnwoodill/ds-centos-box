@@ -19,5 +19,6 @@ install.packages(c("tidyverse",
                    "doParallel",
                    "boot", 
                    "sandwich",
-                   "lmtest"))
+                   "lmtest",
+                   "devtools"))
 
