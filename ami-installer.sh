@@ -45,7 +45,7 @@ echo -e "K8Sh-q51ZRwAAAAAAAAVGrTPnEjSnj_VGvAYxfotUvfnfQba2pU7phDzhXJNvzMH\ny\n" 
 
 echo "$(tput setaf 2)-= INSTALLATION COMPLETE. PRESS ENTER TO RESTART SERVER =-$(tput sgr0)"
 read 
-shutdown -r now
+echo -e "amstelthedog" | shutdown -r now
 
 
 # Install Anaconda
