@@ -13,12 +13,12 @@ Installation
 ------------
 
 ``` bash
-curl https://raw.githubusercontent.com/johnwoodill/ds-centos-box/master/ds_centso7_installer.sh > ds_centso7_installer.sh
+curl https://raw.githubusercontent.com/johnwoodill/ds-centos-box/master/ds_centos7_install.sh > ds_centos7_install.sh
 curl https://raw.githubusercontent.com/johnwoodill/ds-centos-box/master/r-packages.R > r-packages.R
 
 sudo usermod -aG wheel johnwoodill
-chmod +x ds_centso7_installer.sh
-sudo ./ds_centso7_installer.sh
+chmod +x ds_centos7_install.sh
+sudo ./ds_centos7_install.sh
 ```
 
 Instructions
