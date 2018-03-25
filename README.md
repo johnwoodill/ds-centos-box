@@ -17,8 +17,8 @@ curl https://raw.githubusercontent.com/johnwoodill/ds-centos-box/master/ds_cento
 curl https://raw.githubusercontent.com/johnwoodill/ds-centos-box/master/r-packages.R > r-packages.R
 
 sudo usermod -aG wheel johnwoodill
-chmod +x ds_centos7_install.sh
-sudo ./ds_centos7_install.sh
+sudo chmod +x ds_centos7_install.sh
+./ds_centos7_install.sh
 
 ```
 
@@ -28,6 +28,6 @@ Instructions
 ``` bash
 
 # Uploading to Dropbox
-./dropbox_uploader.sh upload r-packages.R /Apps/r-packages.R
+./dropbox_uploader.sh upload r-packages.R r-packages.R
 
 ```

@@ -9,7 +9,7 @@ sudo mkdir /home/johnwoodill/models
 
 # Install necessary packages
 
-echo "$(tput setaf 2)-= UPDATING SYSTEM =-$(tput sgr0)"
+echo "$(tput setaf 2) UPDATING SYSTEM $(tput sgr0)"
 sleep 5
 sudo yum -y update 
 
@@ -19,12 +19,12 @@ sudo yum -y install epel-release wget htop libcurl libcurl-devel libxml2 libxml2
 
 sudo yum -y groupinstall "Development Tools"
 
-echo "$(tput setaf 2)-= INSTALLING R =-$(tput sgr0)"
+echo "$(tput setaf 2) INSTALLING R $(tput sgr0)"
 sleep 5
 sudo yum -y install R-core R-devel
 
 # Install rstudio server
-echo "$(tput setaf 2)-= INSTALLING RSTUDIO SERVER =-$(tput sgr0)"
+echo "$(tput setaf 2) INSTALLING RSTUDIO SERVER $(tput sgr0)"
 sleep 5
 wget https://download2.rstudio.org/rstudio-server-rhel-1.1.442-x86_64.rpm
 sudo yum -y install rstudio-server-rhel-1.1.442-x86_64.rpm
@@ -32,19 +32,19 @@ sudo systemctl status rstudio-server.service
 sudo systemctl enable rstudio-server.service
 sudo echo "www-port=80" >>  /etc/rstudio/rserver.conf
 
-echo "$(tput setaf 2)-= INSTALLING R PACKAGES =-$(tput sgr0)"
+echo "$(tput setaf 2) INSTALLING R PACKAGES $(tput sgr0)"
 sleep 5
 Rscript r-packages.R
 
 # Install Dropbox-Uploader (https://github.com/andreafabrizi/Dropbox-Uploader)
-echo "$(tput setaf 2)-= INSTALLING DROPBOX-UPLOADER =-$(tput sgr0)"
+echo "$(tput setaf 2) INSTALLING DROPBOX-UPLOADER $(tput sgr0)"
 sleep 5
 curl "https://raw.githubusercontent.com/andreafabrizi/Dropbox-Uploader/master/dropbox_uploader.sh" -o dropbox_uploader.sh
 sudo chmod +x dropbox_uploader.sh
 echo -e "K8Sh-q51ZRwAAAAAAAAVGrTPnEjSnj_VGvAYxfotUvfnfQba2pU7phDzhXJNvzMH\ny\n" | ./dropbox_uploader.sh
 
 
-echo "$(tput setaf 2)-= INSTALLATION COMPLETE. PRESS ENTER TO RESTART SERVER =-$(tput sgr0)"
+echo "$(tput setaf 2) INSTALLATION COMPLETE. PRESS ENTER TO RESTART SERVER $(tput sgr0)"
 read 
 echo -e "amstelthedog" | sudo shutdown -r now
 
