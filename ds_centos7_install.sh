@@ -30,7 +30,7 @@ wget https://download2.rstudio.org/rstudio-server-rhel-1.1.442-x86_64.rpm
 sudo yum -y install rstudio-server-rhel-1.1.442-x86_64.rpm
 sudo systemctl status rstudio-server.service
 sudo systemctl enable rstudio-server.service
-sudo echo "www-port=80" >>  /etc/rstudio/rserver.conf
+sudo bash -c 'echo "www-port=80" >>  /etc/rstudio/rserver.conf'
 
 echo "$(tput setaf 2) INSTALLING R PACKAGES $(tput sgr0)"
 sleep 5
