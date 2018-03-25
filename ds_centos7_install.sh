@@ -34,7 +34,7 @@ sudo echo "www-port=80" >>  /etc/rstudio/rserver.conf
 
 echo "$(tput setaf 2) INSTALLING R PACKAGES $(tput sgr0)"
 sleep 5
-Rscript r-packages.R
+sudo Rscript r-packages.R
 
 # Install Dropbox-Uploader (https://github.com/andreafabrizi/Dropbox-Uploader)
 echo "$(tput setaf 2) INSTALLING DROPBOX-UPLOADER $(tput sgr0)"
