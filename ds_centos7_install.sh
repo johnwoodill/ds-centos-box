@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-sudo echo "johnwoodill:amstelthedog" | chpasswd
+sudo bash -c 'echo "johnwoodill:amstelthedog" | chpasswd'
 
 sudo mkdir /home/johnwoodill/data
 sudo mkdir /home/johnwoodill/models
