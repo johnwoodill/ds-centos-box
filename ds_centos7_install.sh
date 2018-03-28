@@ -2,8 +2,8 @@
 
 sudo bash -c 'echo "johnwoodill:amstelthedog" | chpasswd'
 
-sudo mkdir /home/johnwoodill/data
-sudo mkdir /home/johnwoodill/models
+mkdir /home/johnwoodill/data
+mkdir /home/johnwoodill/models
 
 #usermod -aG wheel johnwoodill
 
@@ -15,7 +15,7 @@ sudo yum -y update
 
 echo "$(tput setaf 2)-= INSTALLING PACKAGES =-$(tput sgr0)"
 sleep 5
-sudo yum -y install epel-release wget htop libcurl libcurl-devel libxml2 libxml2-devel curl openssl openssl-devel postgresql postgresql-devel libpng libpng-devel libjpeg libjpeg-devel proj proj-devel proj-epsg proj-nad udunits2 udunits2-devel gdal gdal-devel gdal-libs R-java R-cpp libcurl-devel git
+sudo yum -y install epel-release wget htop libcurl libcurl-devel libxml2 libxml2-devel curl openssl openssl-devel postgresql postgresql-devel libpng libpng-devel libjpeg libjpeg-devel proj proj-devel proj-epsg proj-nad udunits2 udunits2-devel gdal gdal-devel gdal-libs R-java R-cpp libcurl-devel git geos geos-devel
 
 sudo yum -y groupinstall "Development Tools"
 

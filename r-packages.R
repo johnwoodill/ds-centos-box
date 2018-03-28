@@ -22,3 +22,4 @@ install.packages(c("tidyverse",
                    "lmtest",
                    "devtools"))
 
+install.packages("udunits2",configure.args='--with-udunits2-include=/usr/include/udunits2')
