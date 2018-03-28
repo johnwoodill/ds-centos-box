@@ -20,6 +20,7 @@ install.packages(c("tidyverse",
                    "boot",
                    "sandwich",
                    "lmtest",
-                   "devtools"))
+                   "devtools",
+                   "tigris"))
 
 install.packages("udunits2",configure.args='--with-udunits2-include=/usr/include/udunits2')
