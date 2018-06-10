@@ -1,0 +1,1 @@
+sudo dnf install wget htop libcurl libcurl-devel libxml2 libxml2-devel curl openssl openssl-devel postgresql postgresql-devel libpng libpng-devel libjpeg libjpeg-devel proj proj-devel proj-epsg proj-nad udunits2 udunits2-devel gdal gdal-devel gdal-libs R-java libcurl-devel git geos geos-devel
